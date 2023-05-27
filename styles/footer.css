@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--cinza-header);
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-name span {
+    font-size: 22px;
+    color: rgb(239, 55, 55);
+}

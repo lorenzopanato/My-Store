@@ -1,0 +1,130 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cinza-header);
+    background-color: white;
+}
+
+.header-logo {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 250px;
+    cursor: pointer;
+    padding-left: 120px;
+}
+
+.source-container {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.source-bar {
+    background-color: var(--cinza-header);
+    height: 42px;
+    width: 85%;
+    border-radius: 25px;
+    transition: 0.15s;
+}
+
+.source-bar:hover {
+    background-color: rgb(215, 215, 215);
+}
+
+.source-bar::placeholder {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.right-container {
+    height: 100%;
+    flex: 1;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carrinho {
+    gap: 10px;
+    margin-right: 120px;
+}
+
+.login, .carrinho {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.carrinho:hover, .login:hover {
+    background-color: var(--cinza-header);
+}
+
+.carrinho-imagem-container {
+    position: relative;
+}
+
+.carrinho-imagem {
+    width: 30px;
+}
+
+.carrinho-quantidade {
+    position: absolute;
+    padding: 2px;
+    font-size: 15px;
+    background-color: rgb(239, 55, 55);
+    color: white;
+    width: 17px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1590px) {
+    .carrinho-texto {
+        display: none;
+    }
+}
+
+@media (max-width: 1420px) {
+    .source-container {
+        flex: 1;
+    }
+
+    .header-logo img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header-logo img {
+        width: 170px;
+        padding-left: 20px;
+    }
+
+    .carrinho {
+        margin-right: 20px;
+    }
+}
