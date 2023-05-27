@@ -34,8 +34,6 @@ addCartBotoes.forEach(botao => {
             carrinho.push(nomeProduto);
             quantidadeCarrinho.innerHTML = parseInt(quantidadeCarrinho.textContent) + 1;
         }
-
-        alert(`You added the ${nomeProduto} to cart. Your cart:       ${carrinho}`);
     });
 });
 
